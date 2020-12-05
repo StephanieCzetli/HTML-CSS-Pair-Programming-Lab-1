@@ -12,7 +12,7 @@ You will pair program with a partner to complete this assignemnt. One partner, t
 3. Display the Sidebar conent on the webpage
 4. The page should have the correct coloring
 5. Convert main content to a 2 column layout 
-6. The page should have the correct spacing
+6. The page should have the correct spacing                                 
 
 
 ## Mock Up
