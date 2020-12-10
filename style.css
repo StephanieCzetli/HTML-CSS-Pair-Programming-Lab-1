@@ -6,6 +6,10 @@ h1{
     padding: .75em .75em .75em .75em;
 }
 
+a {
+ color: orange;
+}
+
 body{
    font-family: "Roboto"; 
 }
@@ -24,6 +28,18 @@ img{
 .sidebar{
     display: inline-block;
 }
-content{
-    
+
+.footer-text {
+    color: white; 
+    text-align: center; 
+}
+
+.yoursite-orange {
+    color: orange;
+}
+
+.footer-bar {
+    background-color: black;
+    font-family: "Roboto";
+    padding: .75em .75em .75em .75em;
 }
