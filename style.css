@@ -1,29 +1,129 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-h1{
-    color: orange;
-    background-color: black;
+
+* {
+    box-sizing: border-box;
+}
+/***flexbox styles ***/
+.container-main {  /*main flex container*/
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+/***header styles***/
+.main-header { /*flex item*/
+    background-color: #3c3c3c;
     font-family: "Roboto";
-    padding: .75em .75em .75em .75em;
+    font-size: 1.25em;
+    color: #e68a00;
+    padding: 0 1em;
 }
 
-body{
-   font-family: "Roboto"; 
+.main-content { /*creates a flex parent container*/
+    /* background-color: lightblue; */
+    display: flex;
+    justify-content: space-between;
 }
 
-img{
+.col-left { /*flex child item*/
+    background-color:white;
+    flex-grow: 1;
+    flex-basis: 0;
+    padding-top: 1em;
+}
+
+.col-middle { /*flex child item - main content*/
+    background-color: white;
+    flex-grow: 2;
+    flex-basis: 0;
+    padding-top: 1em;
+    padding-right: 2em;
+}
+
+.col-right { /*flex child item - aside content*/
+    background-color: #e6e6e6;
+    flex-grow: 1;
+    flex-basis: 0;
+    padding-top: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.links { /*sidebar links - */
+    display: flex;
+    flex-direction: column; /*stack links vertically*/
+    margin-left: 0;
+    padding-left: 1em;
+}
+
+/***footer styles***/
+.main-footer { /*flex item - main footer style*/
+    background-color:#3c3c3c;
+    font-family: "Roboto";
+    color: white;
+    text-align: center;
+    padding: 0 1em;
+}
+
+/***body styles***/
+body {
+   font-family: "Roboto";
+}
+
+img {
+    width: auto%;
     height: 100%;
-    width: 100%;
     object-fit: cover;
 }
-.thumbnail{
+
+.thumbnail {
     height: 200px;
     width: 200px;
-    float: left;
-    margin-right: 15px;
+    padding-top: .50em;
+    margin-left: 1em;
+    margin-right: 1em;
 }
-.sidebar{
-    display: inline-block;
+
+h2 {
+    font-size: 1.5em;
 }
-content{
-    
+
+h2, h3 {
+    color: #3c3c3c;
+    font-weight: 700;
 }
+
+.text {
+    line-height: 1.75em;
+}
+
+p { 
+    color: #3c3c3c;
+    line-height: 1.5em; /*create space between lines of text in paragraphs*/
+}
+
+.read-more {
+    font-size: .90em;
+    font-weight: 600; /*increased font weight bc it appears heavier than the links*/
+}
+
+a { /*style links & remove underline*/
+    text-decoration: none;
+    color: #e68a00;
+}
+
+li { /* create spacing between links */
+    padding-bottom: 1.5em;
+    list-style-type: none;
+    margin: 0;
+    padding-left: 0;
+}
+
+.header-widgets { /*add margin above other widgets */
+    margin-top: 1em;
+}
+
+.sidebar { /*create space at bottom of other widgets*/
+    margin-bottom: 7em;
+}
+

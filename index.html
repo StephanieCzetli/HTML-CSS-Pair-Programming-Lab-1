@@ -4,52 +4,65 @@
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>MyWebsite</title>
 </head>
 
 <body>
-    <div class="container"> <!--create a container for flexbox layout-->
-        
-        <div class="header">
+    <div class="container-main"> <!--flex container-->
+        <div class="main-header">
             <header>
             <h1>MyWebsite</h1>
             </header>
         </div>
 
         <div class="main-content">
-            <main>
-            <figure class="thumbnail">
+        
+            <div class="col-left">
+               <figure class="thumbnail">
                 <img src="https://www.ge.com/news/sites/default/files/styles/full_header/public/Reports/2020-03/GettyImages-530755444-e1496426370542.jpg?itok=67DfrtvX" alt="Golden Gate Bridge at Sunset">
-            </figure>
-    
-            <h2>  This is a Lorem Ipsum Heading</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis, asperiores. Tempore ipsam, libero eveniet amet odit ex a dicta pariatur exercitationem alias, similique molestiae non sed repellendus sit aliquid nemo!</p>
+                </figure>
+                
+            </div>
 
-            <a href="">Read More</a> 
-            </main>
-        </div>
-
-        <div class="sidebar-content">
-            <aside>
-                <section class="sidebar-links">
-                <h3 class="header-links">SideBar Links</h3>
-                <hr>
-                <a href="">Link 1</a>
-                <a href="">Link 2</a>
-                <a href="">Link 3</a>
-                <a href="">Link 4</a>
-                </section>
-            
-                <section class="sidebar-widgets">
-                <h3 class="header-widgets">Other Widgets</h3>
-                <hr>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime aliquid excepturi sequi facilis nobis, saepe quis voluptas quisquam. Cum molestiae itaque amet dolorem. Temporibus voluptate est placeat laudantium nisi quas?</p>
+            <div class="col-middle">
+                <h2 class="text">This is a Lorem Ipsum Heading</h2>
+                <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime aliquid excepturi sequi facilis nobis, saepe quis voluptas quisquam. Cum molestiae itaque amet dolorem.</p>
                 <br>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-                </section>
-            </aside>
+                <a class="read-more" href="">Read More</a>
+                
+            </div>
+
+            <div class="col-right">
+                <aside class="sidebar">
+                    <section class="sidebar-links">
+                    <h3 class="sidebar-header">SideBar Links</h3>
+                    <hr>
+                    <ul class="links">
+                        <li><a href="">Link 1</a></li>
+                        <li><a href="">Link 2</a></li>
+                        <li><a href="">Link 3</a></li>
+                        <li><a href="">Link 4</a></li>
+                    </ul>
+                    </section>
+                
+                    <section class="sidebar-widgets">
+                    <h3 class="header-widgets">Other Widgets</h3>
+                    <hr>
+                    <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime aliquid excepturi sequi facilis nobis, saepe quis voluptas quisquam. Cum molestiae itaque amet dolorem.</p>
+                    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                    </section>
+                </aside>
+                
+            </div>
+        </div>
+        
+        <div class="main-footer">
+            <footer>
+                <h5 class="footer-text">Copyright <span style="color:#e68a00">YourSite</span>. All Rights Reserved.</h5>
+            </footer>
         </div>
     
     </div>    
 </body>
 </html>
+
